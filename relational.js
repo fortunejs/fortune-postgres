@@ -1,5 +1,4 @@
-var inflect = require('i')()
-  , orm = require('orm')
+var orm = require('orm')
   , RSVP = require('rsvp')
   , _ = require('lodash');
 
@@ -32,14 +31,6 @@ adapter.schema = function(name, schema, options) {
 
   _.each(schema, function(value, key) {
 
-    // Convert camel-cased key names to underscore
-    var under = inflect.underscore(key);
-    if(key != under) {
-      schema[under] = schema[key];
-      delete schema[key];
-      key = under;
-    }
-
     // Convert strings to associations
     var isArray = _.isArray(value);
     value = isArray ? value[0] : value;
@@ -47,11 +38,10 @@ adapter.schema = function(name, schema, options) {
     var ref = isObject ? value.ref : value;
 
     if(typeof ref == 'string') {
-      var inverse = typeof value.inverse == 'string' ?
-        inflect.underscore(value.inverse) : undefined;
+      var inverse = typeof value.inverse == 'string' ? value.inverse : undefined;
 
       _this._associations[name][key] = {
-        ref: inflect.underscore(ref),
+        ref: ref,
         array: isArray,
         inverse: inverse
       };
@@ -273,15 +263,6 @@ adapter._serialize = function(model, resource) {
     });
     delete resource.links;
   }
-
-  // convert keys to underscore
-  _.each(resource, function(value, key) {
-    var under = inflect.underscore(key);
-    if(under != key) {
-      resource[under] = resource[key];
-      delete resource[key];
-    }
-  });
 
   return resource;
 };
