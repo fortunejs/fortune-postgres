@@ -1,0 +1,7 @@
+{
+  "node": true,
+  "unused": true,
+  "es5": true,
+  "smarttabs": true,
+  "laxcomma": true
+}
