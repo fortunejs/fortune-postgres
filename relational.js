@@ -1,6 +1,7 @@
-var orm = require('orm')
-  , RSVP = require('rsvp')
-  , _ = require('lodash');
+var fortune = require('fortune')
+  , orm = require('orm')
+  , RSVP = fortune.RSVP
+  , _ = fortune._;
 
 var adapter = {};
 
@@ -133,8 +134,9 @@ adapter.create = function(model, id, resource) {
     });
     function handleSave(error) {
       if(error) return reject(error);
-      _this._setToOneAssociations(model, instance, resource);
-      _this._getAssociations(model, instance).then(function(resource) {
+      _this._setToOneAssociations(model, instance, resource).then(function() {
+        return _this._getAssociations(model, instance);
+      }).then(function(resource) {
         resolve(_this._deserialize(model, resource));
       }, reject);
     }
@@ -144,7 +146,7 @@ adapter.create = function(model, id, resource) {
 adapter.update = function(model, id, update) {
   var _this = this;
   model = typeof model == 'string' ? this.model(model) : model;
-  update = this.serialize(model, update);
+  update = this._serialize(model, update);
   return new RSVP.Promise(function(resolve, reject) {
     model.get(id, function(error, instance) {
       if(error) reject(error);
@@ -157,8 +159,9 @@ adapter.update = function(model, id, update) {
       });
       function handleSave(error) {
         if(error) return reject(error);
-        _this._setToOneAssociations(model, instance, update);
-        _this._getAssociations(model, instance).then(function(resource) {
+        _this._setToOneAssociations(model, instance, update).then(function() {
+          return _this._getAssociations(model, instance);
+        }).then(function(resource) {
           resolve(_this._deserialize(model, resource));
         }, reject);
       }
@@ -462,7 +465,8 @@ adapter._setToManyAssociations = function(model, instance, resource) {
  * @param {Object} resource serialized JSON object
  */
 adapter._setToOneAssociations = function(model, instance, resource) {
-  var _this = this;
+  var _this = this
+    , promises = [];
 
   _.each(this._associations[model.modelName], function(value, key) {
     var relatedModel = _this._db.models[value.ref]
@@ -496,11 +500,17 @@ adapter._setToOneAssociations = function(model, instance, resource) {
           } else {
             relatedResource[singularKey + '_id'] = null;
           }
-          relatedResource.save();
+          promises.push(new RSVP.Promise(function(resolve, reject) {
+            relatedResource.save(function(error) {
+              if(error) return reject(error);
+              resolve();
+            });
+          }));
         });
       });
     });
   });
+  return RSVP.all(promises);
 };
 
 /**

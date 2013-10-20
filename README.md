@@ -2,6 +2,8 @@
 
 This is a relational database adapter for [Fortune](http://github.com/daliwali/fortune).
 
+WARNING: DO NOT USE YET. DOES NOT PASS TESTS.
+
 **Note**: Arrays of types are not allowed, and will be cast into a singular type, so `[String]` becomes `String`, `[Number]` becomes `Number`, etc.
 
 ### Usage
