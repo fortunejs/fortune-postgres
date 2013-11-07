@@ -13,7 +13,7 @@ adapter._init = function(options) {
     host: options.host,
     database: options.db,
     protocol: options.adapter,
-    username: options.username,
+    user: options.username,
     password: options.password,
     port: options.port,
     query: options.flags
