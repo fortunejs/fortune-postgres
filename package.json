@@ -1,7 +1,7 @@
 {
   "name": "fortune-pg",
   "description": "PostgreSQL adapter for Fortune.",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "license": "MIT",
   "author": "Dali Zheng <d@liwa.li> (http://daliwa.li)",
   "contributors": [],
