@@ -44,10 +44,10 @@ const fortune = new Fortune({
 
 ## Options
 
- * - `url`: Connection URL string. Required.
- * - `isNative`: Whether or not to use native bindings, requires `pg-native` module. Default: `true`.
- * - `primaryKeyType`: Data type of the primary key. May either `String` or `Number`. Default: `String`.
- * - `generatePrimaryKey`: A function that accepts one argument, the `type` of the record, and returns either a `String` or `Number`. By default, it returns 15 random bytes, base64 encoded.
+- `url`: Connection URL string. Required.
+- `isNative`: Whether or not to use native bindings, requires `pg-native` module. Default: `true`.
+- `primaryKeyType`: Data type of the primary key. May either `String` or `Number`. Default: `String`.
+- `generatePrimaryKey`: A function that accepts one argument, the `type` of the record, and returns either a `String` or `Number`. By default, it returns 15 random bytes, base64 encoded.
 
 
 ## Caveats
