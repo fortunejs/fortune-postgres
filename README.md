@@ -14,7 +14,7 @@ $ createdb [dbname]
 
 ## Requirements
 
-- PostgreSQL version **9.3** or newer. Older versions are untested and likely will not work.
+- PostgreSQL version **9.4** or newer. Older versions are untested and will not work.
 
 
 ## Usage
