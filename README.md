@@ -1,25 +1,60 @@
-# fortune-relational
+# Fortune PostgreSQL Adapter
 
-This is a relational database adapter for [Fortune](http://github.com/daliwali/fortune).
+[![Build Status](https://img.shields.io/travis/daliwali/fortune-pg/master.svg?style=flat-square)](https://travis-ci.org/daliwali/fortune-pg)
+[![npm Version](https://img.shields.io/npm/v/fortune-pg.svg?style=flat-square)](https://www.npmjs.com/package/fortune-pg)
+[![License](https://img.shields.io/npm/l/fortune-pg.svg?style=flat-square)](https://raw.githubusercontent.com/daliwali/fortune-pg/master/LICENSE)
 
-WARNING: DO NOT USE YET. DOES NOT PASS TESTS.
+This is a PostgreSQL adapter for Fortune. To use this adapter, the [user](http://www.postgresql.org/docs/9.1/static/app-createuser.html) and [database](http://www.postgresql.org/docs/9.4/static/app-createdb.html) must be setup prior to attempting to connect.
 
-**Note**: Arrays of types are not allowed, and will be cast into a singular type, so `[String]` becomes `String`, `[Number]` becomes `Number`, etc.
-
-### Usage
-
-Install the `fortune-relational` package from `npm`:
 ```
-$ npm install fortune-relational
+$ createuser [username]
+$ createdb [dbname]
 ```
 
-Then configure your app to use it:
+
+## Requirements
+
+- PostgreSQL version **9.3** or newer. Older versions are untested.
+
+
+## Usage
+
+Install the `fortune-pg` package from `npm`:
+
+```
+$ npm install fortune-pg
+```
+
+Then use it with Fortune:
+
 ```js
-var app = fortune({
-  adapter: 'mysql' // or 'psql' or 'sqlite'
-});
+import Fortune from 'fortune'
+import pgAdapter from 'fortune-pg'
+
+const fortune = new Fortune({
+  adapter: {
+    type: pgAdapter,
+    options: {
+      url: `postgres://${username}:${password}@${host}:${port}/${db}`
+    }
+  }
+})
 ```
 
-### Meta
 
-This software is licensed under the [MIT License](//github.com/daliwali/fortune-relational/blob/master/LICENSE.md).
+## Options
+
+ * - `url`: Connection URL string. Required.
+ * - `isNative`: Whether or not to use native bindings, requires `pg-native` module. Default: `true`.
+ * - `primaryKeyType`: Data type of the primary key. May either `String` or `Number`. Default: `String`.
+ * - `generatePrimaryKey`: A function that accepts one argument, the `type` of the record, and returns either a `String` or `Number`. By default, it returns 15 random bytes, base64 encoded.
+
+
+## Caveats
+
+The `query` field for the `options` object should be a string containing arbitrary SQL. It's not recommended to allow direct user input for this, for obvious reasons (SQL injection).
+
+
+## License
+
+This software is licensed under the [MIT License](//github.com/daliwali/fortune-pg/blob/master/LICENSE).
