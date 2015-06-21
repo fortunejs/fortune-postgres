@@ -28,7 +28,7 @@
     "fortune": ">=1.0.0-alpha.12",
     "mkdirp": "0.5.1",
     "rimraf": "2.4.0",
-    "tap-dot": "^1.0.0"
+    "tap-dot": "1.0.0"
   },
   "files": [
     "dist/",
