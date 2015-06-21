@@ -14,7 +14,7 @@
     "build": "mkdirp dist && babel lib --out-dir dist",
     "lint": "eslint lib test",
     "prepublish": "npm run clean && npm run build",
-    "test": "npm run lint && npm run build && node test"
+    "test": "npm run lint && npm run build && node test | tap-dot"
   },
   "main": "./dist/index.js",
   "dependencies": {
@@ -27,7 +27,8 @@
     "eslint": "0.23.0",
     "fortune": ">=1.0.0-alpha.12",
     "mkdirp": "0.5.1",
-    "rimraf": "2.4.0"
+    "rimraf": "2.4.0",
+    "tap-dot": "^1.0.0"
   },
   "files": [
     "dist/",
