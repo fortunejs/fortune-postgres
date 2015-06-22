@@ -1,8 +1,8 @@
 # Fortune PostgreSQL Adapter
 
-[![Build Status](https://img.shields.io/travis/daliwali/fortune-pg/master.svg?style=flat-square)](https://travis-ci.org/daliwali/fortune-pg)
+[![Build Status](https://img.shields.io/travis/fortunejs/fortune-pg/master.svg?style=flat-square)](https://travis-ci.org/fortunejs/fortune-pg)
 [![npm Version](https://img.shields.io/npm/v/fortune-pg.svg?style=flat-square)](https://www.npmjs.com/package/fortune-pg)
-[![License](https://img.shields.io/npm/l/fortune-pg.svg?style=flat-square)](https://raw.githubusercontent.com/daliwali/fortune-pg/master/LICENSE)
+[![License](https://img.shields.io/npm/l/fortune-pg.svg?style=flat-square)](https://raw.githubusercontent.com/fortunejs/fortune-pg/master/LICENSE)
 
 This is a PostgreSQL adapter for Fortune. To use this adapter, the [user](http://www.postgresql.org/docs/9.1/static/app-createuser.html) and [database](http://www.postgresql.org/docs/9.4/static/app-createdb.html) must be setup prior to attempting to connect.
 
@@ -57,4 +57,4 @@ The `query` field for the `options` object should be a string containing arbitra
 
 ## License
 
-This software is licensed under the [MIT License](//github.com/daliwali/fortune-pg/blob/master/LICENSE).
+This software is licensed under the [MIT License](//github.com/fortunejs/fortune-pg/blob/master/LICENSE).
