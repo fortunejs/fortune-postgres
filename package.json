@@ -1,10 +1,12 @@
 {
   "name": "fortune-pg",
   "description": "PostgreSQL adapter for Fortune.",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "license": "MIT",
-  "author": "Dali Zheng <d@liwa.li> (http://daliwa.li)",
-  "contributors": [],
+  "author": {
+    "email": "0x8890@airmail.cc",
+    "url": "http://8890.xxx"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/fortunejs/fortune-pg"
@@ -18,12 +20,12 @@
   },
   "main": "./dist/index.js",
   "dependencies": {
-    "babel-runtime": "5.6.1",
+    "babel-runtime": "5.6.4",
     "pg": "4.4.0",
     "pg-native": "1.8.1"
   },
   "devDependencies": {
-    "babel": "5.6.1",
+    "babel": "5.6.4",
     "eslint": "0.23.0",
     "fortune": ">=1.0.0-alpha.12",
     "mkdirp": "0.5.1",
