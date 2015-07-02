@@ -5,6 +5,7 @@ var adapter = require('../dist')
 testAdapter(adapter, {
   url: 'postgres://postgres@localhost:5432/fortune_test',
   primaryKeyType: Number,
+  useForeignKeys: true,
   generatePrimaryKey: function generatePrimaryKey () {
     return Math.floor(Math.random() * Math.pow(2, 32))
   }

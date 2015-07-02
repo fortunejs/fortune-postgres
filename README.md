@@ -48,6 +48,7 @@ const fortune = new Fortune({
 - `isNative`: Whether or not to use native bindings, requires `pg-native` module, which is an optional dependency of this one. Default: `false`.
 - `primaryKeyType`: Data type of the primary key. May either `String` or `Number`. Default: `String`.
 - `generatePrimaryKey`: A function that accepts one argument, the `type` of the record, and returns either a `String` or `Number`. By default, it returns 15 random bytes, base64 encoded.
+- `useForeignKeys`: Whether or not to use foreign key constraint, optional since it will only be applied to non-array fields. Default: `false`.
 
 
 ## Caveats
