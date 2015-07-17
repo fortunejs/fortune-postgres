@@ -1,10 +1,10 @@
-# Fortune PostgreSQL Adapter
+# Fortune Postgres Adapter
 
-[![Build Status](https://img.shields.io/travis/fortunejs/fortune-pg/master.svg?style=flat-square)](https://travis-ci.org/fortunejs/fortune-pg)
-[![npm Version](https://img.shields.io/npm/v/fortune-pg.svg?style=flat-square)](https://www.npmjs.com/package/fortune-pg)
-[![License](https://img.shields.io/npm/l/fortune-pg.svg?style=flat-square)](https://raw.githubusercontent.com/fortunejs/fortune-pg/master/LICENSE)
+[![Build Status](https://img.shields.io/travis/fortunejs/fortune-postgres/master.svg?style=flat-square)](https://travis-ci.org/fortunejs/fortune-postgres)
+[![npm Version](https://img.shields.io/npm/v/fortune-postgres.svg?style=flat-square)](https://www.npmjs.com/package/fortune-postgres)
+[![License](https://img.shields.io/npm/l/fortune-postgres.svg?style=flat-square)](https://raw.githubusercontent.com/fortunejs/fortune-postgres/master/LICENSE)
 
-This is a PostgreSQL adapter for Fortune. To use this adapter, the [user](http://www.postgresql.org/docs/9.1/static/app-createuser.html) and [database](http://www.postgresql.org/docs/9.4/static/app-createdb.html) must be setup prior to attempting to connect.
+This is a Postgres adapter for Fortune. To use this adapter, the [user](http://www.postgresql.org/docs/9.1/static/app-createuser.html) and [database](http://www.postgresql.org/docs/9.4/static/app-createdb.html) must be setup prior to attempting to connect.
 
 ```
 $ createuser [username]
@@ -14,22 +14,22 @@ $ createdb [dbname]
 
 ## Requirements
 
-- PostgreSQL version **9.4** or newer. Older versions are untested and will not work.
+- Postgres version **9.4** or newer. Older versions are untested and will not work.
 
 
 ## Usage
 
-Install the `fortune-pg` package from `npm`:
+Install the `fortune-postgres` package from `npm`:
 
 ```
-$ npm install fortune-pg
+$ npm install fortune-postgres
 ```
 
 Then use it with Fortune:
 
 ```js
 import Fortune from 'fortune'
-import pgAdapter from 'fortune-pg'
+import pgAdapter from 'fortune-postgres'
 
 const fortune = new Fortune({
   adapter: {
@@ -58,4 +58,4 @@ The `query` field for the `options` object should be a string containing arbitra
 
 ## License
 
-This software is licensed under the [MIT License](//github.com/fortunejs/fortune-pg/blob/master/LICENSE).
+This software is licensed under the [MIT License](//github.com/fortunejs/fortune-postgres/blob/master/LICENSE).
