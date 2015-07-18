@@ -29,11 +29,11 @@ Then use it with Fortune:
 
 ```js
 import Fortune from 'fortune'
-import pgAdapter from 'fortune-postgres'
+import postgresAdapter from 'fortune-postgres'
 
 const fortune = new Fortune({
   adapter: {
-    type: pgAdapter,
+    type: postgresAdapter,
     options: {
       url: `postgres://${username}:${password}@${host}:${port}/${db}`
     }
