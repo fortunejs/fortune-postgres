@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.0.3 (2015-08-07)
+- Bump dependency versions, use semver.
+
+
 ##### 1.0.2 (2015-07-17)
 - Bump versions.
 - Renamed package to `fortune-postgres`.
