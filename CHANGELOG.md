@@ -3,6 +3,7 @@
 
 ##### 1.0.3 (2015-08-07)
 - Bump dependency versions, use semver.
+- Feature: add `typeMapping` option.
 
 
 ##### 1.0.2 (2015-07-17)

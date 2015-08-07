@@ -8,5 +8,9 @@ testAdapter(adapter, {
   useForeignKeys: true,
   generatePrimaryKey: function generatePrimaryKey () {
     return Math.floor(Math.random() * Math.pow(2, 32))
+  },
+  typeMapping: {
+    user: 'users',
+    animal: 'animals'
   }
 })
