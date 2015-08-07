@@ -1,7 +1,7 @@
 # Changelog
 
 
-##### 1.0.3 (2015-08-07)
+##### 1.0.4 (2015-08-07)
 - Bump dependency versions, use semver.
 - Feature: add `typeMapping` option.
 
