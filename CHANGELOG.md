@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.0.6 (2015-08-21)
+- Feature: add missing columns on table if they don't exist yet.
+
+
 ##### 1.0.4 (2015-08-07)
 - Bump dependency versions, use semver.
 - Feature: add `typeMapping` option.
