@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.0.7 (2015-08-24)
+- Fix: `null` option bug.
+
+
 ##### 1.0.6 (2015-08-21)
 - Feature: add missing columns on table if they don't exist yet.
 
