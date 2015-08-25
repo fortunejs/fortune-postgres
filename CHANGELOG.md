@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.0.8 (2015-08-26)
+- Rename `typeMapping` to `typeMap`.
+
+
 ##### 1.0.7 (2015-08-24)
 - Fix: `null` option bug.
 
