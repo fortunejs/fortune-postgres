@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.0.12 (2015-09-08)
+- Fix array of buffers input/output.
+
+
 ##### 1.0.8 (2015-08-26)
 - Rename `typeMapping` to `typeMap`.
 
