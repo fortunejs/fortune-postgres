@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.0.13 (2015-09-10)
+- Fix array containment query.
+
+
 ##### 1.0.12 (2015-09-08)
 - Fix array of buffers input/output.
 
