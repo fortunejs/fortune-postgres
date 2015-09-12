@@ -54,7 +54,7 @@ const fortune = new Fortune({
 
 ## Extension
 
-The `query` field for the `options` object should be a function that accepts one argument, the prepared SQL query, and returns an SQL query.
+The `query` field for the `options` object should be a function that accepts two arguments, the prepared SQL query and parameters, and returns an SQL query.
 
 
 ## License

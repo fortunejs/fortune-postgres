@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.1.1 (2015-09-12)
+- Add parameters as second argument to `query` function.
+
+
 ##### 1.1.0 (2015-09-12)
 - Breaking change: `query` field now accepts a function.
 
