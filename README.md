@@ -52,9 +52,9 @@ const fortune = new Fortune({
 - `useForeignKeys`: Whether or not to use foreign key constraint, optional since it will only be applied to non-array fields. Default: `false`.
 
 
-## Caveats
+## Extension
 
-The `query` field for the `options` object should be a string containing arbitrary SQL. It's not recommended to allow direct user input for this, for obvious reasons (SQL injection).
+The `query` field for the `options` object should be a function that accepts one argument, the prepared SQL query, and returns an SQL query.
 
 
 ## License

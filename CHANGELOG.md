@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.1.0 (2015-09-12)
+- Breaking change: `query` field now accepts a function.
+
+
 ##### 1.0.13 (2015-09-10)
 - Fix array containment query.
 
