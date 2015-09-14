@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.1.2 (2015-09-14)
+- Fix: sort array fields by array length.
+
+
 ##### 1.1.1 (2015-09-12)
 - Add parameters as second argument to `query` function.
 
