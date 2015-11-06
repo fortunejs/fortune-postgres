@@ -1,6 +1,6 @@
 /* eslint-disable no-var */
 var testAdapter = require('fortune/test/adapter')
-var adapter = require('../dist').default
+var adapter = require('../dist')
 
 testAdapter(adapter, {
   url: 'postgres://postgres@localhost:5432/fortune_test',
