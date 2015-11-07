@@ -57,6 +57,11 @@ const fortune = new Fortune({
 The `query` field for the `options` object should be a function that accepts two arguments, the prepared SQL query and parameters, and returns an SQL query.
 
 
+## Internal Usage
+
+The database client is exposed as the `client` property on the adapter instance, so for example, `store.adapter.client` lets you use the Postgres driver directly.
+
+
 ## License
 
 This software is licensed under the [MIT License](//github.com/fortunejs/fortune-postgres/blob/master/LICENSE).
