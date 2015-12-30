@@ -31,7 +31,7 @@ Then use it with Fortune:
 import Fortune from 'fortune'
 import postgresAdapter from 'fortune-postgres'
 
-const fortune = new Fortune({
+const store = new Fortune({
   adapter: {
     type: postgresAdapter,
     options: {
@@ -47,8 +47,8 @@ const fortune = new Fortune({
 - `url`: Connection URL string. Required.
 - `isNative`: Whether or not to use native bindings, requires `pg-native` module, which is an optional dependency of this one. Default: `false`.
 - `typeMap`: an object keyed by type name and valued by table name.
-- `primaryKeyType`: Data type of the primary key. May either `String` or `Number`. Default: `String`.
-- `generatePrimaryKey`: A function that accepts one argument, the `type` of the record, and returns either a `String` or `Number`. By default, it returns 15 random bytes, base64 encoded.
+- `primaryKeyType`: Data type of the primary key. May be `String`, `Number`, or a string for custom type. Default: `String`.
+- `generatePrimaryKey`: A function that accepts one argument, the `type` of the record, and returns either a `String` or `Number`. By default, it returns 15 random bytes, base64 encoded. Set this to a falsy value like `null` to turn this off.
 - `useForeignKeys`: Whether or not to use foreign key constraint, optional since it will only be applied to non-array fields. Default: `false`.
 
 

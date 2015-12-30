@@ -1,6 +1,11 @@
 # Changelog
 
 
+##### 1.2.0 (2015-12-30)
+- Feature: allow strings for `primaryKeyType`.
+- Feature: allow `generatePrimaryKey` to be disabled.
+
+
 ##### 1.1.2 (2015-09-14)
 - Fix: sort array fields by array length.
 
