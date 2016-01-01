@@ -1,7 +1,7 @@
 # Changelog
 
 
-##### 1.2.3 (2015-12-31)
+##### 1.2.4 (2015-12-31)
 - Polish: make common table expression optional in create method.
 - Fix: assign primary key after creating records if they are not supplied.
 - Fix: improve support for numeric primary key types.
