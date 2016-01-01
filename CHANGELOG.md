@@ -1,7 +1,10 @@
 # Changelog
 
 
-##### 1.2.1 (2015-12-31)
+##### 1.2.2 (2015-12-31)
+- Fix: assign primary key after creating records if they are not supplied.
+- Fix: improve support for numeric primary key types.
+- Fix: change type of foreign keys for serial primary keys.
 - Fix: omit `primaryKey` in create method if all IDs are missing.
 
 
