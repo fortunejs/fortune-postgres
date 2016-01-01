@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.2.1 (2015-12-31)
+- Fix: omit `primaryKey` in create method if all IDs are missing.
+
+
 ##### 1.2.0 (2015-12-30)
 - Feature: allow strings for `primaryKeyType`.
 - Feature: allow `generatePrimaryKey` to be disabled.
