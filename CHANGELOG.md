@@ -1,7 +1,7 @@
 # Changelog
 
 
-##### 1.3.0 (2016-01-23)
+##### 1.3.1 (2016-01-23)
 - Feature: implement `range` option.
 - Feature: implement `exists` option.
 - Polish: add `not null` constraint on array fields.
