@@ -4,7 +4,7 @@
 [![npm Version](https://img.shields.io/npm/v/fortune-postgres.svg?style=flat-square)](https://www.npmjs.com/package/fortune-postgres)
 [![License](https://img.shields.io/npm/l/fortune-postgres.svg?style=flat-square)](https://raw.githubusercontent.com/fortunejs/fortune-postgres/master/LICENSE)
 
-This is a Postgres adapter for Fortune. To use this adapter, the [user](http://www.postgresql.org/docs/9.1/static/app-createuser.html) and [database](http://www.postgresql.org/docs/9.4/static/app-createdb.html) must be setup prior to attempting to connect.
+This is a Postgres adapter for Fortune. To use this adapter, the [user](http://www.postgresql.org/docs/9.4/static/app-createuser.html) and [database](http://www.postgresql.org/docs/9.4/static/app-createdb.html) must be setup prior to attempting to connect.
 
 ```
 $ createuser [username]
@@ -28,7 +28,7 @@ $ npm install fortune-postgres
 Then use it with Fortune:
 
 ```js
-import Fortune from 'fortune'
+const fortune = require('fortune')
 import postgresAdapter from 'fortune-postgres'
 
 const store = new Fortune({

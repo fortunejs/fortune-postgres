@@ -1,6 +1,13 @@
 # Changelog
 
 
+##### 1.3.0 (2016-01-23)
+- Feature: implement `range` option.
+- Feature: implement `exists` option.
+- Polish: add `not null` constraint on array fields.
+- Polish: remove transpiler.
+
+
 ##### 1.2.4 (2015-12-31)
 - Polish: make common table expression optional in create method.
 - Fix: assign primary key after creating records if they are not supplied.
