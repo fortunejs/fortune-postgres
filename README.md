@@ -29,9 +29,9 @@ Then use it with Fortune:
 
 ```js
 const fortune = require('fortune')
-import postgresAdapter from 'fortune-postgres'
+const postgresAdapter = require('fortune-postgres')
 
-const store = new Fortune({
+const store = fortune({
   adapter: {
     type: postgresAdapter,
     options: {
