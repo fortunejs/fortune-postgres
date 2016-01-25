@@ -31,7 +31,7 @@ Then use it with Fortune:
 const fortune = require('fortune')
 const postgresAdapter = require('fortune-postgres')
 
-const store = fortune({
+const store = fortune({ ... }, {
   adapter: {
     type: postgresAdapter,
     options: {
