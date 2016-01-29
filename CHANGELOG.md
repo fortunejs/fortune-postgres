@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.4.0 (2016-01-29)
+- Feature: implement transactions.
+
+
 ##### 1.3.1 (2016-01-23)
 - Feature: implement `range` option.
 - Feature: implement `exists` option.
