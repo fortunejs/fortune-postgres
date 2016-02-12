@@ -32,12 +32,13 @@ const fortune = require('fortune')
 const postgresAdapter = require('fortune-postgres')
 
 const store = fortune({ ... }, {
-  adapter: {
-    type: postgresAdapter,
-    options: {
+  adapter: [
+    postgresAdapter,
+    {
+      // options object, URL is mandatory.
       url: `postgres://${username}:${password}@${host}:${port}/${db}`
     }
-  }
+  ]
 })
 ```
 
