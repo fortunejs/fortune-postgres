@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.4.1 (2016-04-14)
+- Fix: add default value as empty array when altering array columns.
+
+
 ##### 1.4.0 (2016-01-29)
 - Feature: implement transactions.
 
