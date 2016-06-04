@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.4.2 (2016-06-04)
+- Polish: update dependencies.
+
+
 ##### 1.4.1 (2016-04-14)
 - Fix: add default value as empty array when altering array columns.
 
