@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.4.3 (2016-08-04)
+- Polish: update dependencies.
+
+
 ##### 1.4.2 (2016-06-04)
 - Polish: update dependencies.
 
