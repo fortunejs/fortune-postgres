@@ -1,7 +1,7 @@
 # Changelog
 
 
-##### 1.4.5 (2016-08-23)
+##### 1.4.6 (2016-08-23)
 - Feature: proper support for custom types.
 
 
