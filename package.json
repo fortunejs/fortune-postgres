@@ -1,7 +1,7 @@
 {
   "name": "fortune-postgres",
   "description": "Postgres adapter for Fortune.",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "license": "MIT",
   "author": {
     "email": "0x8890@airmail.cc",
@@ -18,15 +18,15 @@
   },
   "main": "./lib/index.js",
   "dependencies": {
-    "pg": "6.0.3"
+    "pg": "^6.1.0"
   },
   "optionalDependencies": {
     "pg-native": "^1.10.0"
   },
   "devDependencies": {
-    "eslint": "^3.2.2",
+    "eslint": "^3.3.1",
     "eslint-config-boss": "^1.0.4",
-    "fortune": "^4.1.9",
+    "fortune": "^4.1.10",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.5.4",
     "tapdance": "^4.1.2"
@@ -42,7 +42,7 @@
     }
   },
   "engines": {
-    "node": ">=4.2.0"
+    "node": ">=4"
   },
   "keywords": [
     "fortune",

@@ -1,6 +1,11 @@
 # Changelog
 
 
+##### 1.4.4 (2016-08-23)
+- Fix: check for type constructor.
+- Polish: update dependencies.
+
+
 ##### 1.4.3 (2016-08-04)
 - Polish: update dependencies.
 
