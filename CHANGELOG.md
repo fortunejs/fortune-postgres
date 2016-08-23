@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.4.5 (2016-08-23)
+- Feature: proper support for custom types.
+
+
 ##### 1.4.4 (2016-08-23)
 - Fix: check for type constructor.
 - Polish: update dependencies.
