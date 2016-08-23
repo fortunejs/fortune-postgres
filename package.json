@@ -26,7 +26,7 @@
   "devDependencies": {
     "eslint": "^3.3.1",
     "eslint-config-boss": "^1.0.4",
-    "fortune": "^4.1.10",
+    "fortune": "^4.1.11",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.5.4",
     "tapdance": "^4.1.2"
