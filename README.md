@@ -11,6 +11,8 @@ $ createuser [username]
 $ createdb [dbname]
 ```
 
+*This adapter, along with Fortune.js, does not implement ORM. This adapter sets up tables, and translates the adapter interface directly into SQL statements. It is a plain query builder for Postgres.*
+
 
 ## Requirements
 
