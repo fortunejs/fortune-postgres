@@ -4,7 +4,13 @@
 [![npm Version](https://img.shields.io/npm/v/fortune-postgres.svg?style=flat-square)](https://www.npmjs.com/package/fortune-postgres)
 [![License](https://img.shields.io/npm/l/fortune-postgres.svg?style=flat-square)](https://raw.githubusercontent.com/fortunejs/fortune-postgres/master/LICENSE)
 
-This is a Postgres adapter for Fortune. To use this adapter, the [user](http://www.postgresql.org/docs/9.4/static/app-createuser.html) and [database](http://www.postgresql.org/docs/9.4/static/app-createdb.html) must be setup prior to attempting to connect.
+This is a Postgres adapter for Fortune which makes use of specific Postgres functionality. Key features include:
+
+- **Non-destructive table setup**: it will create tables and columns automatically upon connection, but will not alter columns. Data migrations are not handled by this adapter.
+- **Emulates array foreign keys**: this adapter will *not* create junction tables, but instead create array columns, which is much faster than joins but lacks a database-level foreign key constraint, this is delegated to Fortune.
+- **SQL query building**: it interprets arguments from Fortune's adapter interface directly, and generates optimized queries.
+
+To use this adapter, the [user](http://www.postgresql.org/docs/9.4/static/app-createuser.html) and [database](http://www.postgresql.org/docs/9.4/static/app-createdb.html) must be setup prior to attempting to connect.
 
 ```
 $ createuser [username]
