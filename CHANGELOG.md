@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.5.1 (2017-05-10)
+- Fix: alias `adapter.client` to `adapter.pool` for backwards compatibility. However, this should be considered private API.
+
+
 ##### 1.5.0 (2017-05-10)
 - Feature: allow connection object or an instance of `node-pg-pool` to be passed in directly.
 
