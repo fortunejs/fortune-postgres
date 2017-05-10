@@ -68,7 +68,9 @@ The `query` field for the `options` object should be a function that accepts two
 
 ## Internal Usage
 
-The database client is exposed as the `client` property on the adapter instance, so for example, `store.adapter.client` lets you use the Postgres driver directly.
+The database client pool is exposed as the `pool` property on the adapter instance, so for example, `store.adapter.pool` lets you use the Postgres driver directly.
+
+For more on the API of the `pool` object, refer to [the node-pg-pool documentation](https://github.com/brianc/node-pg-pool).
 
 
 ## License
