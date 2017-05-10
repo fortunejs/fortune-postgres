@@ -53,7 +53,9 @@ const store = fortune({ ... }, {
 
 ## Options
 
-- `url`: Connection URL string. **Required**.
+- `url`: Connection URL string. **Required** if no other connection options are given.
+- `connection`: Connection object, see [documentation](https://github.com/brianc/node-pg-pool). This takes precendence over the URL. Optional.
+- `pool`: an instance of `node-pg-pool` can be passed in directly. This takes precendence over all connection settings. Optional.
 - `isNative`: Whether or not to use native bindings, requires `pg-native` module, which is an optional dependency of this one. Default: `false`.
 - `typeMap`: an object keyed by type name and valued by table name.
 - `primaryKeyType`: Data type of the primary key. May be `String`, `Number`, or a string for custom type. Default: `String`.

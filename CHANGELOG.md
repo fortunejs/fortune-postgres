@@ -1,6 +1,14 @@
 # Changelog
 
 
+##### 1.5.0 (2017-05-10)
+- Feature: allow connection object or an instance of `node-pg-pool` to be passed in directly.
+
+
+##### 1.4.8 (2017-05-10)
+- Refactor: use `pool` API.
+
+
 ##### 1.4.6 (2016-08-23)
 - Feature: proper support for custom types.
 
