@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.6.0 (2017-06-11)
+- Feature: attempt to automatically create the database, so that this setup does not need to be done beforehand.
+
+
 ##### 1.5.1 (2017-05-10)
 - Fix: alias `adapter.client` to `adapter.pool` for backwards compatibility. However, this should be considered private API.
 

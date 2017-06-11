@@ -10,11 +10,10 @@ This is a Postgres adapter for Fortune which makes use of specific Postgres func
 - **Emulates array foreign keys**: this adapter will *not* create junction tables, but instead create array columns, which is much faster than joins but lacks a database-level foreign key constraint, this is delegated to Fortune.
 - **SQL query building**: it interprets arguments from Fortune's adapter interface directly, and generates optimized queries.
 
-To use this adapter, the [user](http://www.postgresql.org/docs/9.4/static/app-createuser.html) and [database](http://www.postgresql.org/docs/9.4/static/app-createdb.html) must be setup prior to attempting to connect.
+To use this adapter, the [database user](http://www.postgresql.org/docs/9.4/static/app-createuser.html) must be setup prior to attempting to connect.
 
 ```
 $ createuser [username]
-$ createdb [dbname]
 ```
 
 *This adapter, along with Fortune.js, does not implement ORM. This adapter sets up tables, and translates the adapter interface directly into SQL statements. It is a plain query builder for Postgres.*
