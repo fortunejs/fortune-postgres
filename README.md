@@ -52,7 +52,7 @@ const store = fortune({ ... }, {
 
 ## Options
 
-- `url`: Connection URL string. **Required** if no other connection options are given.
+- `url`: Connection URL string. **Required** if no other connection options are given. Add the query param `ssl=true` to enable SSL.
 - `connection`: Connection object, see [documentation](https://github.com/brianc/node-pg-pool). This takes precendence over the URL. Optional.
 - `pool`: an instance of `node-pg-pool` can be passed in directly. This takes precendence over all connection settings. Optional.
 - `isNative`: Whether or not to use native bindings, requires `pg-native` module, which is an optional dependency of this one. Default: `false`.
@@ -66,6 +66,11 @@ const store = fortune({ ... }, {
 ## Extension
 
 The `query` field for the `options` object should be a function that accepts two arguments, the prepared SQL query and parameters, and returns an SQL query.
+
+
+## SSL
+
+SSL can be enabled by adding `ssl=true` as a query parameter the database URL (e.g. `postgres://postgres@localhost:5432/app_db?ssl=true`). If using the `connection` object, add an `ssl` property with the value `true`.
 
 
 ## Internal Usage
