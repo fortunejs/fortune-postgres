@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.6.1 (2017-07-12)
+- Fix: ignore errors that may occur if default database `postgres` does not exist.
+
+
 ##### 1.6.0 (2017-06-11)
 - Feature: attempt to automatically create the database, so that this setup does not need to be done beforehand.
 
