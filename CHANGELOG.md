@@ -1,6 +1,11 @@
 # Changelog
 
 
+##### 1.6.2 (2017-08-13)
+- Polish: ignore creating non-enumerable fields if they are not denormalized inverse fields.
+- Polish: allow `sslmode=require` query parameter for SSL.
+
+
 ##### 1.6.1 (2017-07-12)
 - Fix: ignore errors that may occur if default database `postgres` does not exist.
 
