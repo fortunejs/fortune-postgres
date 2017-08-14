@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.6.3 (2017-08-14)
+- Fix: inconsistent behavior when casting buffers.
+
+
 ##### 1.6.2 (2017-08-13)
 - Polish: ignore creating non-enumerable fields if they are not denormalized inverse fields.
 - Polish: allow `sslmode=require` query parameter for SSL.

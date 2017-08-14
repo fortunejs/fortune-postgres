@@ -5,6 +5,7 @@ testAdapter(adapter, {
   url: 'postgres://postgres@localhost:5432/fortune_test',
   primaryKeyType: 'integer',
   useForeignKeys: true,
+  // isNative: true,
   generatePrimaryKey: () => Math.floor(Math.random() * Math.pow(2, 16)),
   typeMap: {
     user: 'users',
