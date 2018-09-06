@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.6.5 (2018-09-05)
+- Fix: invalid format for JSON arrays.
+
+
 ##### 1.6.4 (2018-03-05)
 - Fix: use a single client instance during a transaction.
 - Bump `pg` dependency major version.
