@@ -1,6 +1,12 @@
 # Changelog
 
 
+##### 1.6.6 (2018-09-26)
+- Fix: ensure that DeprecationWarning regarding Buffer constructor usage is removed.
+- Polish: ensure that `client_min_messages` is set before attempting to create tables for each client.
+- Polish: update dependencies.
+
+
 ##### 1.6.5 (2018-09-05)
 - Fix: invalid format for JSON arrays.
 
