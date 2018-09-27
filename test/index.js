@@ -3,7 +3,6 @@ const adapter = require('../lib')
 
 testAdapter(adapter, {
   url: 'postgres://postgres@localhost:5432/fortune_test',
-  isNative: true,
   primaryKeyType: 'integer',
   useForeignKeys: true,
   // isNative: true,
