@@ -3,7 +3,7 @@ sudo: false
 language: node_js
 
 addons:
-  postgresql: "10.5"
+  postgresql: "9.6"
 
 # before_script:
 #   - psql -c 'create database fortune_test;' -U postgres
