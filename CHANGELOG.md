@@ -1,7 +1,7 @@
 # Changelog
 
 
-##### 1.6.8 (2018-10-13)
+##### 1.6.9 (2018-10-13)
 - Fix: do not allow extraneous fields in update to cause silent error.
 
 

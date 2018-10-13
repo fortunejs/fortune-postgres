@@ -1,7 +1,7 @@
 {
   "name": "fortune-postgres",
   "description": "Postgres adapter for Fortune.",
-  "version": "1.6.8",
+  "version": "1.6.9",
   "license": "MIT",
   "repository": {
     "type": "git",
