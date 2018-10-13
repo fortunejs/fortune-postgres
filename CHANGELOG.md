@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.6.8 (2018-10-13)
+- Fix: do not allow extraneous fields in update to cause silent error.
+
+
 ##### 1.6.7 (2018-09-26)
 - Polish: make authorization parameters in connection URL optional.
 
