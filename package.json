@@ -14,18 +14,18 @@
   },
   "main": "./lib/index.js",
   "dependencies": {
-    "pg": "^7.4.3"
+    "pg": "^7.6.1"
   },
   "optionalDependencies": {
     "pg-native": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "^5.6.0",
+    "eslint": "^5.9.0",
     "eslint-config-boss": "^1.0.6",
-    "fortune": "^5.5.2",
+    "fortune": "^5.5.14",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.6.2",
-    "tapdance": "^5.1.0"
+    "tapdance": "^5.1.1"
   },
   "files": [
     "lib/",
