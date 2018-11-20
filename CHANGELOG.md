@@ -1,6 +1,10 @@
 # Changelog
 
 
+##### 1.6.10 (2018-11-20)
+- Fix: subtle bug in encoding buffer values on update.
+
+
 ##### 1.6.9 (2018-10-13)
 - Fix: do not allow extraneous fields in update to cause silent error.
 
