@@ -1,7 +1,7 @@
 {
   "name": "fortune-postgres",
   "description": "Postgres adapter for Fortune.",
-  "version": "1.6.10",
+  "version": "1.6.11",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -14,7 +14,7 @@
   },
   "main": "./lib/index.js",
   "dependencies": {
-    "pg": "^7.6.1"
+    "pg": "^8.7.1"
   },
   "optionalDependencies": {
     "pg-native": "^3.0.0"
